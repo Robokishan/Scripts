@@ -1,0 +1,15 @@
+avrdude burning bootloader to arduino mini: avrdude -C/etc/avrdude.conf -v -patmega328p -cusbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xFD:m -Uhfuse:w:0xDA:m -Ulfuse:w:0xFF:m  
+
+
+avrdude arduino uno bootloder burn : avrdude -C/home/kishan/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino9/etc/avrdude.conf -v -patmega328p -cusbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xFD:m -Uhfuse:w:0xDE:m -Ulfuse:w:0xFF:m
+
+
+arduino mini bootlodaer burn :avrdude -C/home/kishan/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino9/etc/avrdude.conf -v -patmega328p -cusbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xFD:m -Uhfuse:w:0xd8:m -Ulfuse:w:0xff:m
+
+arduino uno program upload : avrdude -C/home/kishan/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino9/etc/avrdude.conf -v -V -patmega328p -carduino -P/dev/ttyUSB0 -b115200 -D -Uflash:w:/tmp/arduino_build_999785/Blink.ino.hex:i
+
+arduino uno atmel-ice bootloder upload : avrdude -C/home/kishan/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino9/etc/avrdude.conf -v -patmega328p -catmelice_isp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xFD:m -Uhfuse:w:0xDE:m -Ulfuse:w:0xFF:m
+
+arduino uno program upload using usbasp : avrdude -C/home/kishan/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino9/etc/avrdude.conf -v -V -patmega328p -cusbasp -Pusb -Uflash:w:/tmp/arduino_build_999785/Blink.ino.hex:i
+
+
