@@ -1,0 +1,22 @@
+Creating and Formatting Live USB images with DD
+
+To View a list of available Drives use fdisk.
+
+sudo fdisk -l
+
+To unmount a drive use umount.
+
+umount /dev/sdx1
+
+Creating a bootable USB. ( Drive Needs to be unmounted )
+
+sudo dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx && sync
+
+Formatting USB Drive back to factory state. ( Drive Needs to be unmounted )
+
+sudo mkfs.vfat /dev/sdx -I
+
+To copy a CD/DVD to a .iso 
+
+cd /dev; ls -ld sr* cdr* dvd*
+dd if=/dev/cdrom of=~/dvdcopy.iso

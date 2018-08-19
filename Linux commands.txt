@@ -1,0 +1,2 @@
+Some Linux commands
+tar -xvf file.tar --> To unpack tar file ot extract

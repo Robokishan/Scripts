@@ -1,0 +1,4 @@
+yaourt -S aur/ambiance-radiance-colors-suite 
+aur/ambiance-radiance-flat-colors-suite 
+aur/fluxbox-style-ambiance-crunchy aur/gtk-theme-ambiance-blue 
+aur/ubuntu-themes aur/ubuntu-themes-wildblueyonder

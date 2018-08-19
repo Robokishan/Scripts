@@ -1,0 +1,6 @@
+mount directory from host os to guest arch linux
+$ modprobe vboxsf
+$ mount -t vboxsf shared /media/shared
+
+
+sudo mount -t vboxsf -o uid=1000,gid=1000 drive /home/kishan/share

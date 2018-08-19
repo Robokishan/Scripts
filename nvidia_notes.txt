@@ -1,0 +1,12 @@
+how to install nvidia with bumblebee
+
+packages to install 
+
+bumblebee 
+mesa 
+nvidia-lts #(if kernel is lts install nvidia-lts or install nvidia)
+xf86-video-intel
+lib32-virtualgl 
+lib32-nvidia-utils
+mesa-demos or glxinfo
+bbswitch-dkms

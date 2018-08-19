@@ -1,0 +1,5 @@
+sudo apt-get install w3m w3m-img
+to open a webpage simply type in a terminal window: w3m <url_of_the_webpage>
+to open a new page: type Shift-U
+to go back one page: Shift-B
+open a new tab: Shift-T
